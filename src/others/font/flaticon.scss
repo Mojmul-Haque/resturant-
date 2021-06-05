@@ -1,0 +1,41 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?1fcec052f0ecb6c2ab8c90082d05ba34") format("truetype"),
+url("./flaticon.woff?1fcec052f0ecb6c2ab8c90082d05ba34") format("woff"),
+url("./flaticon.woff2?1fcec052f0ecb6c2ab8c90082d05ba34") format("woff2"),
+url("./flaticon.eot?1fcec052f0ecb6c2ab8c90082d05ba34#iefix") format("embedded-opentype"),
+url("./flaticon.svg?1fcec052f0ecb6c2ab8c90082d05ba34#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "shopping-cart": "\f101",
+    "ice-bucket": "\f102",
+    "fast-food": "\f103",
+    "van": "\f104",
+);
+
+.flaticon-shopping-cart:before {
+    content: map-get($flaticon-map, "shopping-cart");
+}
+.flaticon-ice-bucket:before {
+    content: map-get($flaticon-map, "ice-bucket");
+}
+.flaticon-fast-food:before {
+    content: map-get($flaticon-map, "fast-food");
+}
+.flaticon-van:before {
+    content: map-get($flaticon-map, "van");
+}

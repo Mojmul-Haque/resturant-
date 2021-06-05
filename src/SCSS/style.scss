@@ -1,6 +1,154 @@
 @import "_mixin.scss";
 @import "_variable.scss";
 
-.header {
-  background: $brandColor;
+// common css start
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.border-shape {
+  position:relative &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+  }
+}
+
+// common css end
+
+.main-menu {
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.301);
+  z-index: 1;
+  ul {
+    li {
+      .nav-link {
+        @include anchorTag;
+        margin: 0 20px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        span {
+          &:after {
+            content: "";
+            position: absolute;
+            right: -15px;
+            bottom: 0px;
+            border: 5px solid;
+            border-color: $brandColor transparent transparent transparent;
+          }
+        }
+      }
+      .user-account {
+        &:before {
+          background: transparent;
+        }
+      }
+    }
+    .dropdownLink {
+      position: relative;
+      .hover-item {
+        position: absolute;
+        left: 24px;
+        top: 50px;
+        width: 145px;
+        background: $brandColor;
+        line-height: 26px;
+        padding: 4px 14px;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all linear 0.3s;
+      }
+      &:hover .hover-item {
+        transform: scaleY(1);
+      }
+    }
+  }
+}
+
+// homeBanner part start============
+
+#homeBanner {
+  height: 650px;
+  background: url("../images/background/banner-1.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  .banner-content {
+    padding: 300px 0 0;
+    text-align: center;
+    h2 {
+      @include commonText(50px, #fff, $a, 400);
+      padding-bottom: 13px;
+    }
+    p {
+      padding: 0 52px;
+      color: #fff;
+    }
+    a {
+      @include brandBtn(#fff, transparent, #fff, $brandColor);
+      padding: 0 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 30px;
+    }
+  }
+}
+
+// banner part end here
+
+// order part start here
+#order-part {
+  background: url("../images/background/order-bg-bottom.jpg") no-repeat center;
+  background-size: cover;
+  padding: 20px 0;
+  .order-head {
+    h3 {
+      @include subHeading;
+    }
+    p {
+      @include paragraph(#757575);
+      padding: 15px 154px;
+    }
+  }
+  .order-inner {
+    ul {
+      li {
+        p {
+          @include paragraph(#757575);
+          margin: 15px 51px 8px;
+          font-style: italic;
+        }
+      }
+    }
+  }
 }
