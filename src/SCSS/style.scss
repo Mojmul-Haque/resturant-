@@ -23,21 +23,39 @@ ol,
 li {
   list-style: none;
 }
+p {
+  @include paragraph(#757575);
+}
 
 a {
   display: inline-block;
   text-decoration: none;
 }
 
+// common css end
+
+// reusable css start
 .border-shape {
   position:relative &:after {
     content: "";
     position: absolute;
-    left: 50%;
+    left: 0%;
+    bottom: 0px;
   }
 }
 
-// common css end
+.section-head {
+  h3 {
+    @include subHeading;
+  }
+  p {
+    padding: 0 263px;
+  }
+}
+
+// reusable css end here
+
+// header  menu start here;
 
 .main-menu {
   height: 60px;
@@ -132,12 +150,8 @@ a {
   background-size: cover;
   padding: 20px 0;
   .order-head {
-    h3 {
-      @include subHeading;
-    }
     p {
-      @include paragraph(#757575);
-      padding: 15px 154px;
+      padding: 15px 163px;
     }
   }
   .order-inner {
@@ -152,3 +166,113 @@ a {
     }
   }
 }
+
+// orderr part end here;;
+
+// popular-dishes part start here
+#popular-dishes {
+  padding: 50px 0;
+  .food-item {
+    border: 1px solid #e5e5e5;
+    background: #f5f5f5;
+    margin: 30px 0 0;
+    .food-content {
+      border: 1px solid #e5e5e5;
+      padding: 15px 23px 0px;
+      h5 {
+        @include subInnerHeading(#000);
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+      h6 {
+        @include commonText(24px, $brandColor, $a, 600);
+        transition: all linear 0.3s;
+      }
+      button {
+        @include brandBtn(#fff, $brandColor, #fff, $brandColor);
+        transition: all linear 0.3s;
+        padding: 0 20px;
+        opacity: 0;
+      }
+    }
+    &:hover button {
+      transform: translateY(-25px);
+      opacity: 1;
+    }
+    &:hover h6 {
+      opacity: 0;
+    }
+  }
+}
+
+// popular-dishes part end here
+// food menus start here
+
+#foodMenus {
+  padding: 50px 0;
+  // background: url("../images/background/menus-big-left.png") #f5f5f5 no-repeat right bottom;
+  background: #f5f5f5;
+  background-size: cover;
+  .menus-btn {
+    padding: 18px 20px;
+    background: #fff;
+    margin-top: 30px;
+    ul {
+      li,
+      .active-menu {
+        width: 100%;
+        @include brandBtn(#222, #fff, transparent, $brandColor);
+        margin: 0 5px;
+        cursor: pointer;
+        &:hover {
+          color: #fff !important;
+        }
+      }
+      .active-menu {
+        background: $brandColor;
+        color: #fff;
+      }
+    }
+  }
+  .food-menu-inner {
+    padding-top: 50px;
+    .menu-item {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      padding: 0 12px;
+      margin-bottom: 30px;
+      .item-content {
+        border-left: 1px solid #e5e5e5;
+        padding: 20px 12px 30px;
+        h5 {
+          @include commonText(16px, $brandColor, $a, 600);
+        }
+        h6 {
+          @include commonText(13px, #222, $a, 600);
+          line-height: 32px;
+          font-style: italic;
+        }
+        p {
+          padding-right: 100px;
+        }
+      }
+      .right-item-content {
+        .add-cart {
+          font-size: 33px;
+          color: $brandColor;
+          margin: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.menus-bg{
+  background:url(../images/background/menus-big-left.png) no-repeat right bottom;
+  background-size: cover;
+}
+
+// food menus end here

@@ -1,0 +1,93 @@
+[
+    {
+      "_id": 1,
+      "name": "Food Title Here",
+      "subTitle":"Crus/Dictim/Risus",
+      "category":"breakfast",
+      "image": "https://www.spheretheme.com/html/steam/assets/images/our-menu/01.jpg",
+      "price": 100,
+      "description":
+        "Lorem ipsum is simply dummy text of the printing and type setting industry."
+    },
+    {
+      "_id": 2,
+      "name": "Food Title Here",
+      "subTitle":"Crus/Dictim/Risus",
+      "category":"lunch",
+      "image": "https://www.spheretheme.com/html/steam/assets/images/our-menu/07.jpg",
+      "price": 200,
+      "description":
+        "Lorem ipsum is simply dummy text of the printing and type setting industry."
+    },
+    {
+      "_id": 3,
+      "name": "Food Title Here",
+      "subTitle":"Crus/Dictim/Risus",
+      "category":"dinner",
+      "image": "https://www.spheretheme.com/html/steam/assets/images/our-menu/04.jpg",
+      "price": 300,
+      "description":
+        "Lorem ipsum is simply dummy text of the printing and type setting industry."
+    },
+    {
+      "_id": 4,
+      "name": "Food Title Here",
+      "subTitle":"Crus/Dictim/Risus",
+      "category":"breakfast",
+      "image": "https://www.spheretheme.com/html/steam/assets/images/our-menu/02.jpg",
+      "price": 500,
+      "description":
+        "Lorem ipsum is simply dummy text of the printing and type setting industry."
+    },
+    {
+      "_id": 5,
+      "name": "Food Title Here",
+      "subTitle":"Crus/Dictim/Risus",
+      "category":"lunch",
+      "image": "https://www.spheretheme.com/html/steam/assets/images/our-menu/05.jpg",
+      "price": 140,
+      "description":
+        "Lorem ipsum is simply dummy text of the printing and type setting industry."
+    },
+    {
+      "_id": 6,
+      "name": "Food Title Here",
+      "subTitle":"Crus/Dictim/Risus",
+      "category":"dinner",
+      "image": "https://www.spheretheme.com/html/steam/assets/images/our-menu/08.jpg",
+      "price": 400,
+      "description":
+        "Lorem ipsum is simply dummy text of the printing and type setting industry."
+    },
+    {
+      "_id": 6,
+      "name": "Food Title Here",
+      "subTitle":"Crus/Dictim/Risus",
+      "category":"dinner",
+      "image": "https://www.spheretheme.com/html/steam/assets/images/our-menu/08.jpg",
+      "price": 400,
+      "description":
+        "Lorem ipsum is simply dummy text of the printing and type setting industry."
+    },
+    {
+      "_id": 7,
+      "name": "Food Title Here",
+      "subTitle":"Crus/Dictim/Risus",
+      "category":"dinner",
+      "image": "https://www.spheretheme.com/html/steam/assets/images/our-menu/03.jpg",
+      "price": 400,
+      "description":
+        "Lorem ipsum is simply dummy text of the printing and type setting industry."
+    },
+    {
+      "_id": 8,
+      "name": "Food Title Here",
+      "subTitle":"Crus/Dictim/Risus",
+      "category":"dinner",
+      "image": "https://www.spheretheme.com/html/steam/assets/images/our-menu/06.jpg",
+      "price": 400,
+      "description":
+        "Lorem ipsum is simply dummy text of the printing and type setting industry."
+    }
+  ]
+  

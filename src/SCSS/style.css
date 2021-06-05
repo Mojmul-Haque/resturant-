@@ -18,6 +18,12 @@ ol,
 li {
   list-style: none; }
 
+p {
+  font-size: 16px;
+  color: #757575;
+  line-height: 26px;
+  font-family: "Lato", sans-serif; }
+
 a {
   display: inline-block;
   text-decoration: none; }
@@ -25,7 +31,18 @@ a {
 position:relative .border-shape:after {
   content: "";
   position: absolute;
-  left: 50%; }
+  left: 0%;
+  bottom: 0px; }
+
+.section-head h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 36px;
+  font-weight: 400;
+  color: #333;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.9); }
+.section-head p {
+  padding: 0 263px; }
 
 .main-menu {
   height: 60px;
@@ -44,7 +61,8 @@ position:relative .border-shape:after {
     padding: 0;
     line-height: 14px;
     text-transform: capitalize;
-    transform: perspective(1px) translateZ(0);
+    -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
     position: relative;
     margin: 0 20px; }
     .main-menu ul li .nav-link::before {
@@ -56,8 +74,11 @@ position:relative .border-shape:after {
       top: 20px;
       background: #e54c2a;
       height: 4px;
+      -webkit-transition-property: left;
       transition-property: left;
-      transition-timing-function: ease-out;
+      -webkit-transition-timing-function: ease-out;
+              transition-timing-function: ease-out;
+      -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease; }
     .main-menu ul li .nav-link:hover {
       color: #e9457a !important; }
@@ -85,11 +106,15 @@ position:relative .border-shape:after {
       background: #e9457a;
       line-height: 26px;
       padding: 4px 14px;
-      transform: scaleY(0);
-      transform-origin: top;
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      -webkit-transition: all linear 0.3s;
       transition: all linear 0.3s; }
     .main-menu ul .dropdownLink:hover .hover-item {
-      transform: scaleY(1); }
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1); }
 
 #homeBanner {
   height: 650px;
@@ -118,6 +143,7 @@ position:relative .border-shape:after {
       background: transparent;
       border: 1px solid #fff;
       border-radius: 5px;
+      -webkit-transition: all linear 0.3s;
       transition: all linear 0.3s;
       padding: 0 20px;
       text-transform: uppercase;
@@ -131,19 +157,8 @@ position:relative .border-shape:after {
   background: url("../images/background/order-bg-bottom.jpg") no-repeat center;
   background-size: cover;
   padding: 20px 0; }
-  #order-part .order-head h3 {
-    font-family: "Great Vibes", cursive;
-    font-size: 36px;
-    font-weight: 400;
-    color: #333;
-    text-transform: capitalize;
-    text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.9); }
   #order-part .order-head p {
-    font-size: 16px;
-    color: #757575;
-    line-height: 26px;
-    font-family: "Lato", sans-serif;
-    padding: 15px 154px; }
+    padding: 15px 163px; }
   #order-part .order-inner ul li p {
     font-size: 16px;
     color: #757575;
@@ -151,5 +166,120 @@ position:relative .border-shape:after {
     font-family: "Lato", sans-serif;
     margin: 15px 51px 8px;
     font-style: italic; }
+
+#popular-dishes {
+  padding: 50px 0; }
+  #popular-dishes .food-item {
+    border: 1px solid #e5e5e5;
+    background: #f5f5f5;
+    margin: 30px 0 0; }
+    #popular-dishes .food-item .food-content {
+      border: 1px solid #e5e5e5;
+      padding: 15px 23px 0px; }
+      #popular-dishes .food-item .food-content h5 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        margin: 0 0 10px; }
+      #popular-dishes .food-item .food-content p {
+        font-size: 14px;
+        margin-bottom: 15px; }
+      #popular-dishes .food-item .food-content h6 {
+        font-size: 24px;
+        color: #e9457a;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        -webkit-transition: all linear 0.3s;
+        transition: all linear 0.3s; }
+      #popular-dishes .food-item .food-content button {
+        font-size: 16px;
+        font-weight: 700;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        background: #e9457a;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        -webkit-transition: all linear 0.3s;
+        transition: all linear 0.3s;
+        transition: all linear 0.3s;
+        padding: 0 20px;
+        opacity: 0; }
+        #popular-dishes .food-item .food-content button:hover {
+          background: #e9457a;
+          border-color: transparent; }
+    #popular-dishes .food-item:hover button {
+      -webkit-transform: translateY(-25px);
+              transform: translateY(-25px);
+      opacity: 1; }
+    #popular-dishes .food-item:hover h6 {
+      opacity: 0; }
+
+#foodMenus {
+  padding: 50px 0;
+  background: #f5f5f5;
+  background-size: cover; }
+  #foodMenus .menus-btn {
+    padding: 18px 20px;
+    background: #fff;
+    margin-top: 30px; }
+    #foodMenus .menus-btn ul li,
+    #foodMenus .menus-btn ul .active-menu {
+      width: 100%;
+      font-size: 16px;
+      font-weight: 700;
+      height: 50px;
+      line-height: 50px;
+      color: #222;
+      background: #fff;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      -webkit-transition: all linear 0.3s;
+      transition: all linear 0.3s;
+      margin: 0 5px;
+      cursor: pointer; }
+      #foodMenus .menus-btn ul li:hover,
+      #foodMenus .menus-btn ul .active-menu:hover {
+        background: #e9457a;
+        border-color: transparent; }
+      #foodMenus .menus-btn ul li:hover,
+      #foodMenus .menus-btn ul .active-menu:hover {
+        color: #fff !important; }
+    #foodMenus .menus-btn ul .active-menu {
+      background: #e9457a;
+      color: #fff; }
+  #foodMenus .food-menu-inner {
+    padding-top: 50px; }
+    #foodMenus .food-menu-inner .menu-item {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      padding: 0 12px;
+      margin-bottom: 30px; }
+      #foodMenus .food-menu-inner .menu-item .item-content {
+        border-left: 1px solid #e5e5e5;
+        padding: 20px 12px 30px; }
+        #foodMenus .food-menu-inner .menu-item .item-content h5 {
+          font-size: 16px;
+          color: #e9457a;
+          font-family: "Lato", sans-serif;
+          font-weight: 600; }
+        #foodMenus .food-menu-inner .menu-item .item-content h6 {
+          font-size: 13px;
+          color: #222;
+          font-family: "Lato", sans-serif;
+          font-weight: 600;
+          line-height: 32px;
+          font-style: italic; }
+        #foodMenus .food-menu-inner .menu-item .item-content p {
+          padding-right: 100px; }
+      #foodMenus .food-menu-inner .menu-item .right-item-content .add-cart {
+        font-size: 33px;
+        color: #e9457a;
+        margin: 10px;
+        cursor: pointer; }
+
+.menus-bg {
+  background: url(../images/background/menus-big-left.png) no-repeat right bottom;
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

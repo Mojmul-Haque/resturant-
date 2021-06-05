@@ -1,0 +1,62 @@
+ [
+  {
+    "_id": 1,
+    "name": "Dish Name Here",
+    "subTitle":"Crus/Dictim/Risus",
+    "category":"breakfast",
+    "image": "https://www.spheretheme.com/html/steam/assets/images/dishes/03.jpg",
+    "price": 100,
+    "description":
+      "Lorem ipsum is simply dummy text of the printing and type setting industry."
+  },
+  {
+    "_id": 2,
+    "name": "Dish Name Here",
+    "subTitle":"Crus/Dictim/Risus",
+    "category":"lunch",
+    "image": "https://www.spheretheme.com/html/steam/assets/images/dishes/04.jpg",
+    "price": 200,
+    "description":
+      "Lorem ipsum is simply dummy text of the printing and type setting industry."
+  },
+  {
+    "_id": 3,
+    "name": "Dish Name Here",
+    "subTitle":"Crus/Dictim/Risus",
+    "category":"dinner",
+    "image": "https://www.spheretheme.com/html/steam/assets/images/dishes/05.jpg",
+    "price": 300,
+    "description":
+      "Lorem ipsum is simply dummy text of the printing and type setting industry."
+  },
+  {
+    "_id": 4,
+    "name": "Dish Name Here",
+    "subTitle":"Crus/Dictim/Risus",
+    "category":"breakfast",
+    "image": "https://www.spheretheme.com/html/steam/assets/images/dishes/01.jpg",
+    "price": 500,
+    "description":
+      "Lorem ipsum is simply dummy text of the printing and type setting industry."
+  },
+  {
+    "_id": 5,
+    "name": "Dish Name Here",
+    "subTitle":"Crus/Dictim/Risus",
+    "category":"lunch",
+    "image": "https://www.spheretheme.com/html/steam/assets/images/dishes/02.jpg",
+    "price": 140,
+    "description":
+      "Lorem ipsum is simply dummy text of the printing and type setting industry."
+  },
+  {
+    "_id": 6,
+    "name": "Dish Name Here",
+    "subTitle":"Crus/Dictim/Risus",
+    "category":"dinner",
+    "image": "https://www.spheretheme.com/html/steam/assets/images/dishes/03.jpg",
+    "price": 400,
+    "description":
+      "Lorem ipsum is simply dummy text of the printing and type setting industry."
+  }
+]
