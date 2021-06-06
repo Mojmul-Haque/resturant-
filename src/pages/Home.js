@@ -1,5 +1,6 @@
 import React from "react";
 import FoodMenus from "../components/FoodMenus/FoodMenus";
+import Footer from "../components/Footer/Footer";
 import FunFactor from "../components/FunFactor/FunFactor";
 import HomeBanner from "../components/HomeBanner/HomeBanner";
 import Order from "../components/Order/Order";
@@ -14,6 +15,7 @@ const Home = () => {
       <PopularDishes />
       <FoodMenus />
       <FunFactor />
+      <Footer />
     </main>
   );
 };

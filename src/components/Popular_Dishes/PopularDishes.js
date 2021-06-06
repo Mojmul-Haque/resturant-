@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import meals from "../../FakeData/PopularDishes.json";
 import SinglePopularDish from "../../SinglePopularDish/SinglePopularDish";
 const PopularDishes = () => {
+  const [searchFood, setSearchFood] = useState("");
+  console.log(searchFood);
+
+  // search food by name
+  let foodItems = [...meals];
+  // console.log(foodItems);
+  if (searchFood.length) {
+    foodItems = meals.filter((food) => {
+      return (
+        food.name.match(searchFood) ||
+        food.name.toLowerCase().match(searchFood) ||
+        String(food.price).match(searchFood)
+      );
+    });
+  }
+
   return (
     <section id="popular-dishes">
       <div className="container">
@@ -15,8 +31,17 @@ const PopularDishes = () => {
               lobortis nulla.
             </p>
           </div>
-          {meals.map((meal) => (
-            <SinglePopularDish foodItem={meal} key={meal._id} />
+          <div className="text-center">
+            <input
+              onChange={(e) => setSearchFood(e.target.value)}
+              type="search"
+              className="search-food form-control"
+              placeholder="search food name or price"
+              value={searchFood}
+            />
+          </div>
+          {foodItems.map((item) => (
+            <SinglePopularDish foodItem={item} key={item._id} />
           ))}
         </div>
       </div>

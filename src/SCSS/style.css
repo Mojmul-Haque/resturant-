@@ -34,6 +34,9 @@ position:relative .border-shape:after {
   left: 0%;
   bottom: 0px; }
 
+section {
+  padding: 50px 0; }
+
 .section-head h3 {
   font-family: "Great Vibes", cursive;
   font-size: 36px;
@@ -169,6 +172,16 @@ position:relative .border-shape:after {
 
 #popular-dishes {
   padding: 50px 0; }
+  #popular-dishes .search-food {
+    width: 50%;
+    border-radius: 20px;
+    height: 40px;
+    margin: 20px auto 0;
+    padding: 0 20px; }
+    #popular-dishes .search-food:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-color: #e9457a; }
   #popular-dishes .food-item {
     border: 1px solid #e5e5e5;
     background: #f5f5f5;
@@ -278,8 +291,138 @@ position:relative .border-shape:after {
         margin: 10px;
         cursor: pointer; }
 
-.menus-bg {
-  background: url(../images/background/menus-big-left.png) no-repeat right bottom;
+#funFactor {
+  background: url(../images/background/fun-factor.jpg) no-repeat center;
+  background-size: cover;
+  padding: 50px 0; }
+  #funFactor .box svg {
+    font-size: 40px;
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s; }
+  #funFactor .box h6 {
+    font-size: 30px;
+    color: #212529;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    padding: 12px 0 6px; }
+  #funFactor .box h5 {
+    font-size: 20px;
+    color: #212529;
+    font-family: "Lato", sans-serif;
+    font-weight: 500; }
+  #funFactor .box:hover svg {
+    color: #e9457a; }
+
+#contact-part {
+  background: url(../images/background/contact.jpg) no-repeat center;
   background-size: cover; }
+  #contact-part .section-head {
+    color: #fff; }
+  #contact-part form {
+    text-align: center; }
+    #contact-part form input {
+      height: 45px;
+      border-color: #fff;
+      background: #2222228a;
+      margin: 30px 0 0;
+      color: #fff;
+      letter-spacing: 0.3px;
+      font-family: "Lato", sans-serif; }
+      #contact-part form input::-webkit-input-placeholder {
+        font-size: 18px;
+        text-transform: capitalize;
+        font-family: "Lato", sans-serif; }
+      #contact-part form input:-ms-input-placeholder {
+        font-size: 18px;
+        text-transform: capitalize;
+        font-family: "Lato", sans-serif; }
+      #contact-part form input::-ms-input-placeholder {
+        font-size: 18px;
+        text-transform: capitalize;
+        font-family: "Lato", sans-serif; }
+      #contact-part form input::placeholder {
+        font-size: 18px;
+        text-transform: capitalize;
+        font-family: "Lato", sans-serif; }
+      #contact-part form input:focus {
+        border-color: #e9457a;
+        -webkit-box-shadow: none;
+                box-shadow: none; }
+    #contact-part form input[type="date"]::-webkit-calendar-picker-indicator {
+      -webkit-filter: invert(100%);
+              filter: invert(100%); }
+    #contact-part form .input-icon {
+      position: absolute;
+      right: 28px;
+      bottom: 14px;
+      font-size: 18px;
+      color: #fff; }
+    #contact-part form .brandBtn {
+      font-size: 16px;
+      font-weight: 700;
+      height: 50px;
+      line-height: 50px;
+      color: #fff;
+      background: #e9457a;
+      border: 1px solid #e9457a;
+      border-radius: 5px;
+      -webkit-transition: all linear 0.3s;
+      transition: all linear 0.3s;
+      margin: 30px 0 0;
+      padding: 0 20px; }
+      #contact-part form .brandBtn:hover {
+        background: #fff;
+        border-color: transparent; }
+      #contact-part form .brandBtn:hover {
+        color: #e9457a !important; }
+
+.footer-inner {
+  background: #f6f6f6;
+  padding: 50px; }
+  .footer-inner h3 {
+    font-size: 20px;
+    color: #333;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    padding-bottom: 30px; }
+  .footer-inner ul li {
+    font-size: 14px;
+    color: #333;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    position: relative;
+    line-height: 35px; }
+    .footer-inner ul li svg {
+      position: absolute;
+      left: 0;
+      top: 12px;
+      color: #e9457a; }
+    .footer-inner ul li a {
+      color: #333;
+      -webkit-transition: all linear 0.3s;
+      transition: all linear 0.3s; }
+      .footer-inner ul li a:hover {
+        color: #e9457a;
+        text-decoration: underline; }
+    .footer-inner ul li img {
+      margin-top: 7px;
+      margin-right: 7px; }
+  .footer-inner .contact-info li {
+    padding-left: 26px; }
+
+.footer-bottom {
+  background: #e9457a;
+  padding: 10px 0; }
+  .footer-bottom .logo img {
+    height: 45px; }
+  .footer-bottom .social-icon a {
+    font-size: 16px;
+    color: #fff;
+    margin-right: 10px;
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s; }
+    .footer-bottom .social-icon a:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
 
 /*# sourceMappingURL=style.css.map */

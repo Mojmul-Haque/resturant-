@@ -43,7 +43,9 @@ a {
     bottom: 0px;
   }
 }
-
+section {
+  padding: 50px 0;
+}
 .section-head {
   h3 {
     @include subHeading;
@@ -172,6 +174,17 @@ a {
 // popular-dishes part start here
 #popular-dishes {
   padding: 50px 0;
+  .search-food {
+    width: 50%;
+    border-radius: 20px;
+    height: 40px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+    &:focus {
+      box-shadow: none;
+      border-color: $brandColor;
+    }
+  }
   .food-item {
     border: 1px solid #e5e5e5;
     background: #f5f5f5;
@@ -212,7 +225,6 @@ a {
 
 #foodMenus {
   padding: 50px 0;
-  // background: url("../images/background/menus-big-left.png") #f5f5f5 no-repeat right bottom;
   background: #f5f5f5;
   background-size: cover;
   .menus-btn {
@@ -270,9 +282,149 @@ a {
   }
 }
 
-.menus-bg{
-  background:url(../images/background/menus-big-left.png) no-repeat right bottom;
+// food menus end here
+
+// funFactor start  here
+#funFactor {
+  background: url(../images/background/fun-factor.jpg) no-repeat center;
   background-size: cover;
+  padding: 50px 0;
+  .box {
+    svg {
+      font-size: 40px;
+      transition: all linear 0.3s;
+    }
+    h6 {
+      @include commonText(30px, #212529, $a, 600);
+      padding: 12px 0 6px;
+    }
+    h5 {
+      @include commonText(20px, #212529, $a, 500);
+    }
+    &:hover svg {
+      color: $brandColor;
+    }
+  }
 }
 
-// food menus end here
+// funFactor end  here
+
+// contact part start here
+
+// contact part end here
+
+#contact-part {
+  background: url(../images/background/contact.jpg) no-repeat center;
+  background-size: cover;
+  .section-head {
+    color: #fff;
+  }
+
+  form {
+    text-align: center;
+    input {
+      height: 45px;
+      border-color: #fff;
+      background: #2222228a;
+      margin: 30px 0 0;
+      color: #fff;
+      letter-spacing: 0.3px;
+      font-family: $a;
+
+      &::placeholder {
+        font-size: 18px;
+        text-transform: capitalize;
+        font-family: $a;
+      }
+      &:focus {
+        border-color: $brandColor;
+        box-shadow: none;
+      }
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      filter: invert(100%);
+    }
+
+    .input-icon {
+      position: absolute;
+      right: 28px;
+      bottom: 14px;
+      font-size: 18px;
+      color: #fff;
+    }
+    .brandBtn {
+      @include brandBtn(#fff, $brandColor, $brandColor, #fff);
+      margin: 30px 0 0;
+      padding: 0 20px;
+      &:hover {
+        color: $brandColor !important;
+      }
+    }
+  }
+}
+
+// FooterInenr start here
+
+.footer-inner {
+  background: #f6f6f6;
+  padding: 50px;
+  h3 {
+    @include commonText(20px, #333, $a, 600);
+    padding-bottom: 30px;
+  }
+  ul {
+    li {
+      @include commonText(14px, #333, $a, 400);
+      position: relative;
+      line-height: 35px;
+      svg {
+        position: absolute;
+        left: 0;
+        top: 12px;
+        color: $brandColor;
+      }
+      a {
+        color: #333;
+        transition: all linear 0.3s;
+        &:hover {
+          color: $brandColor;
+          text-decoration: underline;
+        }
+      }
+      img {
+        margin-top: 7px;
+        margin-right: 7px;
+      }
+    }
+  }
+  .contact-info li {
+    padding-left: 26px;
+  }
+}
+
+// FooterInenr end here
+
+// footer  bottom start ===copyright
+.footer-bottom {
+  background: $brandColor;
+  padding: 10px 0;
+  .logo {
+    img {
+      height: 45px;
+    }
+  }
+  .social-icon {
+    a {
+      font-size: 16px;
+      color: #fff;
+      margin-right: 10px;
+      transition: all linear 0.3s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+// footer  bottom end ===copyright
