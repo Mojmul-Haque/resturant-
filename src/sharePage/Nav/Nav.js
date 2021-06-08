@@ -6,6 +6,7 @@ import {
   faShoppingBag,
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
+import CartHoverItem from "../../components/CartHoverItem/CartHoverItem";
 
 const Nav = () => {
   return (
@@ -46,11 +47,12 @@ const Nav = () => {
                 <li>Payments</li>
               </ul>
             </li>
-            <li className="nav-item">
+            <li className="nav-item cart-menu position-relative">
               <Link className="nav-link" aria-current="page" to="/">
                 <FontAwesomeIcon icon={faShoppingCart} />
                 <span> Cart</span>
               </Link>
+              <CartHoverItem />
             </li>
           </ul>
         </div>

@@ -47,6 +47,11 @@ section {
 .section-head p {
   padding: 0 263px; }
 
+.price-right-side {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
 .main-menu {
   height: 60px;
   line-height: 60px;
@@ -118,6 +123,100 @@ section {
     .main-menu ul .dropdownLink:hover .hover-item {
       -webkit-transform: scaleY(1);
               transform: scaleY(1); }
+  .main-menu ul .cart-menu .cart-item-show {
+    position: absolute;
+    width: 300px;
+    left: -91px;
+    top: 37px;
+    -webkit-box-shadow: 0 0 20px #660808;
+            box-shadow: 0 0 20px #660808;
+    padding: 20px 0;
+    background: #222;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s; }
+    .main-menu ul .cart-menu .cart-item-show .cart-header {
+      padding: 0px 0; }
+      .main-menu ul .cart-menu .cart-item-show .cart-header figure {
+        padding: 0 6px; }
+        .main-menu ul .cart-menu .cart-item-show .cart-header figure img {
+          width: 40px;
+          height: 40px;
+          border: 2px solid #a9da25;
+          margin-left: 5px; }
+        .main-menu ul .cart-menu .cart-item-show .cart-header figure figcaption {
+          margin-left: 10px; }
+          .main-menu ul .cart-menu .cart-item-show .cart-header figure figcaption h6 {
+            font-size: 14px;
+            color: #fff;
+            font-family: "Lato", sans-serif;
+            font-weight: 500; }
+          .main-menu ul .cart-menu .cart-item-show .cart-header figure figcaption p {
+            font-size: 14px;
+            color: #e9457a;
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            padding-top: 3px; }
+    .main-menu ul .cart-menu .cart-item-show .cart-item-inner {
+      border-bottom: 2px solid;
+      border-top: 2px solid;
+      padding: 0 15px;
+      overflow-y: scroll;
+      max-height: 200px; }
+      .main-menu ul .cart-menu .cart-item-show .cart-item-inner::-webkit-scrollbar-track {
+        border: 1px solid #000;
+        padding: 2px 0;
+        background-color: transparent; }
+      .main-menu ul .cart-menu .cart-item-show .cart-item-inner::-webkit-scrollbar {
+        width: 10px; }
+      .main-menu ul .cart-menu .cart-item-show .cart-item-inner::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #737272;
+        border: 1px solid #000; }
+      .main-menu ul .cart-menu .cart-item-show .cart-item-inner .cart-food {
+        padding: 5px 0;
+        min-height: 450px; }
+        .main-menu ul .cart-menu .cart-item-show .cart-item-inner .cart-food p {
+          padding: 2px 0;
+          color: #fff;
+          position: relative;
+          text-transform: capitalize; }
+    .main-menu ul .cart-menu .cart-item-show .cart-bottom {
+      padding: 5px 15px; }
+      .main-menu ul .cart-menu .cart-item-show .cart-bottom h6 {
+        font-size: 15px;
+        color: #fff;
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        padding: 6px 0; }
+      .main-menu ul .cart-menu .cart-item-show .cart-bottom a {
+        font-size: 16px;
+        font-weight: 700;
+        height: 50px;
+        line-height: 50px;
+        color: #e9457a;
+        background: #222;
+        border: 1px solid #e9457a;
+        border-radius: 5px;
+        -webkit-transition: all linear 0.3s;
+        transition: all linear 0.3s;
+        width: 100%;
+        text-align: center;
+        margin: 22px 0 0;
+        -webkit-box-shadow: 0 3px 0px #e9457a;
+                box-shadow: 0 3px 0px #e9457a;
+        text-transform: uppercase; }
+        .main-menu ul .cart-menu .cart-item-show .cart-bottom a:hover {
+          background: #e9457a;
+          border-color: transparent; }
+        .main-menu ul .cart-menu .cart-item-show .cart-bottom a:hover {
+          color: #fff !important; }
+  .main-menu ul .cart-menu:hover .cart-item-show {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1); }
 
 #homeBanner {
   height: 650px;

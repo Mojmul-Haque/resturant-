@@ -55,6 +55,12 @@ section {
   }
 }
 
+.price-right-side {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 // reusable css end here
 
 // header  menu start here;
@@ -109,6 +115,95 @@ section {
         transition: all linear 0.3s;
       }
       &:hover .hover-item {
+        transform: scaleY(1);
+      }
+    }
+    .cart-menu {
+      .cart-item-show {
+        position: absolute;
+        width: 300px;
+        left: -91px;
+        top: 37px;
+        box-shadow: 0 0 20px rgb(102, 8, 8);
+        padding: 20px 0;
+        background: #222;
+        // transform: scaleY(0);
+        transform-origin: top;
+        transition: all linear 0.3s;
+        .cart-header {
+          padding: 0px 0;
+          figure {
+            padding: 0 6px;
+            img {
+              width: 40px;
+              height: 40px;
+              border: 2px solid #a9da25;
+              margin-left: 5px;
+            }
+            figcaption {
+              margin-left: 10px;
+              h6 {
+                @include commonText(14px, #fff, $a, 500);
+              }
+              p {
+                @include commonText(14px, $brandColor, $a, 400);
+                padding-top: 3px;
+              }
+            }
+          }
+        }
+        .cart-item-inner {
+          border-bottom: 2px solid;
+          border-top: 2px solid;
+          padding: 0 15px;
+          overflow-y: scroll;
+          max-height: 200px;
+          &::-webkit-scrollbar-track {
+            border: 1px solid #000;
+            padding: 2px 0;
+            background-color: transparent;
+          }
+          &::-webkit-scrollbar {
+            width: 10px;
+          }
+          &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #737272;;
+            border: 1px solid #000;
+          }
+
+          .cart-food {
+            padding: 5px 0;
+            min-height: 450px;
+            p {
+              padding: 2px 0;
+              color: #fff;
+              position: relative;
+              text-transform: capitalize;
+            }
+          }
+        }
+        .cart-bottom {
+          padding: 5px 15px;
+          h6 {
+            @include commonText(15px, #fff, $a, 500);
+            padding: 6px 0;
+          }
+          a {
+            @include brandBtn($brandColor, #222, $brandColor, $brandColor);
+            width: 100%;
+            text-align: center;
+            margin: 22px 0 0;
+            box-shadow: 0 3px 0px $brandColor;
+            text-transform: uppercase;
+            &:hover {
+              color: #fff !important;
+            }
+          }
+        }
+      }
+      &:hover .cart-item-show {
         transform: scaleY(1);
       }
     }
