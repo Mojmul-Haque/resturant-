@@ -1,25 +1,23 @@
-import React, { useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import CheckoutForm from "../CheckoutForm/CheckoutForm";
 
 const CartHoverItem = () => {
+  const [totalPrice, setTotalPrice] = useState(0);
   const cartItems = [
     { name: "chicken", price: 200, id: 1, qty: 1 },
     { name: "food", price: 600, id: 2, qty: 1 },
-    { name: "banana", price: 100, id: 3, qty: 1 },
-    { name: "rice", price: 300, id: 4, qty: 1 },
-    { name: "chicken", price: 200, id: 1, qty: 1 },
-    { name: "chicken", price: 200, id: 1, qty: 1 },
-    { name: "food", price: 600, id: 2, qty: 1 },
-    { name: "banana", price: 100, id: 3, qty: 1 },
-    { name: "rice", price: 300, id: 4, qty: 1 },
-    { name: "chicken", price: 200, id: 1, qty: 1 },
-    { name: "chicken", price: 200, id: 1, qty: 1 },
-    { name: "food", price: 600, id: 2, qty: 1 },
-    { name: "banana", price: 100, id: 3, qty: 1 },
-    { name: "rice", price: 300, id: 4, qty: 1 },
-    { name: "chicken", price: 200, id: 1, qty: 1 },
+    { name: "banana", price: 200, id: 3, qty: 1 },
+    { name: "rice", price: 800, id: 4, qty: 1 },
   ];
 
+  useEffect(() => {
+    let price = 0;
+    cartItems.forEach((food) => {
+      price += food.qty * food.price;
+    });
+    setTotalPrice(price);
+  }, []);
 
   return (
     <div className="cart-item-show text-white">
@@ -52,14 +50,15 @@ const CartHoverItem = () => {
       <div className="cart-bottom">
         <div className="div">
           <h6 className="position-relative">
-            Sub Total <span className="price-right-side">$150</span>
+            Sub Total <span className="price-right-side">{totalPrice}</span>
           </h6>
           <h6 className="position-relative">
             Shipment <span className="price-right-side">$50</span>
           </h6>
         </div>
         <div className="checkout-btn">
-          <Link to="/">Checkout</Link>
+          {/* <Link to="/">Checkout</Link> */}
+          <CheckoutForm />
         </div>
       </div>
     </div>

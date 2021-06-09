@@ -122,12 +122,12 @@ section {
       .cart-item-show {
         position: absolute;
         width: 300px;
-        left: -91px;
+        left: -136px;
         top: 37px;
         box-shadow: 0 0 20px rgb(102, 8, 8);
         padding: 20px 0;
         background: #222;
-        // transform: scaleY(0);
+        transform: scaleY(0);
         transform-origin: top;
         transition: all linear 0.3s;
         .cart-header {
@@ -169,7 +169,7 @@ section {
           &::-webkit-scrollbar-thumb {
             border-radius: 10px;
             box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-            background-color: #737272;;
+            background-color: #737272;
             border: 1px solid #000;
           }
 
@@ -198,6 +198,24 @@ section {
             box-shadow: 0 3px 0px $brandColor;
             text-transform: uppercase;
             &:hover {
+              color: #fff !important;
+            }
+          }
+          .StripeCheckout {
+            @include brandBtn($brandColor !important, #222 !important, $brandColor !important, $brandColor !important);
+            width: 100%;
+            text-align: center;
+            margin: 22px 0 0;
+            box-shadow: 0 3px 0px $brandColor !important;
+            text-transform: uppercase;
+
+            span {
+              font-size: 16px !important;
+              background-image: none !important;
+              box-shadow: none !important;
+              color: $brandColor !important;
+            }
+            &:hover span {
               color: #fff !important;
             }
           }
@@ -523,3 +541,91 @@ section {
 }
 
 // footer  bottom end ===copyright
+
+//===========================================================
+// checkout part start here
+// =========================================================
+
+#checkoutForm {
+  form {
+    .paymentInput {
+      height: 45px !important;
+      border: 3px solid red;
+      display: block !important;
+    }
+    .brandBtn {
+      @include brandBtn(#fff, #000, $brandColor, $brandColor);
+
+      // padding: 0 20px;
+      width: 100%;
+    }
+  }
+}
+
+//===========================================================
+// checkout part end here
+// =========================================================
+
+// =============================================================
+//  dashboard page start here
+// ==============================================================
+
+#dashboard {
+  padding: 0;
+  .side-menu {
+    padding-left: 15px;
+    height: 100vh;
+    background: #313a46;
+    .active-side-menu {
+      width: 230px;
+      padding-left: 20px;
+    }
+    .remove-side-menu {
+      width: 45px;
+    }
+    ul {
+      padding-top: 50px;
+      li {
+        a {
+          @include commonText(16px, #fff, $a, 500);
+          line-height: 38px;
+          .showText {
+            padding-left: 10px;
+            font-size: 16px;
+          }
+          .hideText {
+            font-size: 0;
+          }
+        }
+      }
+    }
+  }
+  .dashboard-contents {
+    .content-head {
+      background: $brandColor;
+      padding: 10px 30px;
+      .toggle-menu-btn {
+        svg {
+          font-size: 26px;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+      .user-account {
+        cursor: pointer;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        span {
+          padding-left: 8px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// =============================================================
+//  dashboard page endd here
+// ==============================================================

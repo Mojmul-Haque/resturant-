@@ -126,12 +126,14 @@ section {
   .main-menu ul .cart-menu .cart-item-show {
     position: absolute;
     width: 300px;
-    left: -91px;
+    left: -136px;
     top: 37px;
     -webkit-box-shadow: 0 0 20px #660808;
             box-shadow: 0 0 20px #660808;
     padding: 20px 0;
     background: #222;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
     -webkit-transform-origin: top;
             transform-origin: top;
     -webkit-transition: all linear 0.3s;
@@ -213,6 +215,34 @@ section {
           background: #e9457a;
           border-color: transparent; }
         .main-menu ul .cart-menu .cart-item-show .cart-bottom a:hover {
+          color: #fff !important; }
+      .main-menu ul .cart-menu .cart-item-show .cart-bottom .StripeCheckout {
+        font-size: 16px;
+        font-weight: 700;
+        height: 50px;
+        line-height: 50px;
+        color: #e9457a !important;
+        background: #222 !important;
+        border: 1px solid #e9457a !important;
+        border-radius: 5px;
+        -webkit-transition: all linear 0.3s;
+        transition: all linear 0.3s;
+        width: 100%;
+        text-align: center;
+        margin: 22px 0 0;
+        -webkit-box-shadow: 0 3px 0px #e9457a !important;
+                box-shadow: 0 3px 0px #e9457a !important;
+        text-transform: uppercase; }
+        .main-menu ul .cart-menu .cart-item-show .cart-bottom .StripeCheckout:hover {
+          background: #e9457a !important;
+          border-color: transparent; }
+        .main-menu ul .cart-menu .cart-item-show .cart-bottom .StripeCheckout span {
+          font-size: 16px !important;
+          background-image: none !important;
+          -webkit-box-shadow: none !important;
+                  box-shadow: none !important;
+          color: #e9457a !important; }
+        .main-menu ul .cart-menu .cart-item-show .cart-bottom .StripeCheckout:hover span {
           color: #fff !important; }
   .main-menu ul .cart-menu:hover .cart-item-show {
     -webkit-transform: scaleY(1);
@@ -523,5 +553,65 @@ section {
     .footer-bottom .social-icon a:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
+
+#checkoutForm form .paymentInput {
+  height: 45px !important;
+  border: 3px solid red;
+  display: block !important; }
+#checkoutForm form .brandBtn {
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  background: #000;
+  border: 1px solid #e9457a;
+  border-radius: 5px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  width: 100%; }
+  #checkoutForm form .brandBtn:hover {
+    background: #e9457a;
+    border-color: transparent; }
+
+#dashboard {
+  padding: 0; }
+  #dashboard .side-menu {
+    padding-left: 15px;
+    height: 100vh;
+    background: #313a46; }
+    #dashboard .side-menu .active-side-menu {
+      width: 230px;
+      padding-left: 20px; }
+    #dashboard .side-menu .remove-side-menu {
+      width: 45px; }
+    #dashboard .side-menu ul {
+      padding-top: 50px; }
+      #dashboard .side-menu ul li a {
+        font-size: 16px;
+        color: #fff;
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        line-height: 38px; }
+        #dashboard .side-menu ul li a .showText {
+          padding-left: 10px;
+          font-size: 16px; }
+        #dashboard .side-menu ul li a .hideText {
+          font-size: 0; }
+  #dashboard .dashboard-contents .content-head {
+    background: #e9457a;
+    padding: 10px 30px; }
+    #dashboard .dashboard-contents .content-head .toggle-menu-btn svg {
+      font-size: 26px;
+      color: #fff;
+      cursor: pointer; }
+    #dashboard .dashboard-contents .content-head .user-account {
+      cursor: pointer; }
+      #dashboard .dashboard-contents .content-head .user-account img {
+        width: 40px;
+        height: 40px; }
+      #dashboard .dashboard-contents .content-head .user-account span {
+        padding-left: 8px;
+        color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
