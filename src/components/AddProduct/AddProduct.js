@@ -1,0 +1,67 @@
+import React from "react";
+import { useForm } from "react-hook-form";
+
+const AddProduct = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
+  return (
+    <div className="add-review">
+      <div className="col-lg-6">
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <div>
+            <input
+              className="form-control my-2"
+              {...register("name", { required: true })}
+              placeholder="food name"
+            />
+            {errors.name && <span>This field is required</span>}
+          </div>
+          <div>
+            <input
+              className="form-control my-2"
+              {...register("price", { required: true })}
+              placeholder="food Price"
+            />
+            {errors.price && <span>This field is required</span>}
+          </div>
+          <div>
+            <input
+              className="form-control my-2"
+              {...register("foodType", { required: true })}
+              placeholder="food type"
+            />
+            {errors.foodType && <span>This field is required</span>}
+          </div>
+          <div>
+            <input
+              type="file"
+              className="form-control my-2"
+              {...register("foodImage", { required: true })}
+            />
+            {errors.foodImage && <span>This field is required</span>}
+          </div>
+          <div>
+            <textarea
+              className="form-control my-2"
+              {...register("textBox", { required: true })}
+              placeholder="food-description"
+            />
+            {errors.textBox && <span>This field is required</span>}
+          </div>
+          <input
+            type="submit"
+            value="Add Food"
+            className="brand-btn text-uppercase mt-3"
+          />
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default AddProduct;

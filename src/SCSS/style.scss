@@ -532,7 +532,6 @@ section {
       color: #fff;
       margin-right: 10px;
       transition: all linear 0.3s;
-
       &:hover {
         transform: scale(1.2);
       }
@@ -589,12 +588,16 @@ section {
         a {
           @include commonText(16px, #fff, $a, 500);
           line-height: 38px;
+          transition: all linear 0.3s;
           .showText {
             padding-left: 10px;
             font-size: 16px;
           }
           .hideText {
             font-size: 0;
+          }
+          &:hover {
+            color: $brandColor;
           }
         }
       }
@@ -624,8 +627,39 @@ section {
       }
     }
   }
+  .order-list {
+    .order-top-text {
+      h6 {
+        box-shadow: 0 2px 4px #333;
+        background: #fa5c7c;
+      }
+    }
+  }
+  .add-review {
+    form {
+      .form-control {
+        &:focus {
+          border-color: $brandColor;
+          box-shadow: none;
+        }
+      }
+
+      textarea {
+        height: 160px;
+        resize: none;
+      }
+      .brand-btn {
+        @include brandBtn(#fff, #fa5c7c, #fa5c7c, #fa5c7c);
+        padding: 0 50px;
+        box-shadow: 0 4px 4px $brandColor;
+        &:hover {
+          color: #fff !important;
+        }
+      }
+    }
+  }
 }
 
 // =============================================================
-//  dashboard page endd here
+//  dashboard page end here
 // ==============================================================

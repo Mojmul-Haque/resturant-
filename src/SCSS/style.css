@@ -592,12 +592,16 @@ section {
         color: #fff;
         font-family: "Lato", sans-serif;
         font-weight: 500;
-        line-height: 38px; }
+        line-height: 38px;
+        -webkit-transition: all linear 0.3s;
+        transition: all linear 0.3s; }
         #dashboard .side-menu ul li a .showText {
           padding-left: 10px;
           font-size: 16px; }
         #dashboard .side-menu ul li a .hideText {
           font-size: 0; }
+        #dashboard .side-menu ul li a:hover {
+          color: #e9457a; }
   #dashboard .dashboard-contents .content-head {
     background: #e9457a;
     padding: 10px 30px; }
@@ -613,5 +617,35 @@ section {
       #dashboard .dashboard-contents .content-head .user-account span {
         padding-left: 8px;
         color: #fff; }
+  #dashboard .order-list .order-top-text h6 {
+    -webkit-box-shadow: 0 2px 4px #333;
+            box-shadow: 0 2px 4px #333;
+    background: #fa5c7c; }
+  #dashboard .add-review form .form-control:focus {
+    border-color: #e9457a;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  #dashboard .add-review form textarea {
+    height: 160px;
+    resize: none; }
+  #dashboard .add-review form .brand-btn {
+    font-size: 16px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background: #fa5c7c;
+    border: 1px solid #fa5c7c;
+    border-radius: 5px;
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+    padding: 0 50px;
+    -webkit-box-shadow: 0 4px 4px #e9457a;
+            box-shadow: 0 4px 4px #e9457a; }
+    #dashboard .add-review form .brand-btn:hover {
+      background: #fa5c7c;
+      border-color: transparent; }
+    #dashboard .add-review form .brand-btn:hover {
+      color: #fff !important; }
 
 /*# sourceMappingURL=style.css.map */
