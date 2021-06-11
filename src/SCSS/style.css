@@ -622,48 +622,58 @@ section {
       #dashboard .dashboard-contents .content-head .user-account span {
         padding-left: 8px;
         color: #fff; }
-  #dashboard .add-review form .form-control:focus {
-    border-color: #e9457a;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-  #dashboard .add-review form input {
-    height: 40px;
-    border-color: #ddd; }
-    #dashboard .add-review form input::-webkit-input-placeholder {
-      text-transform: capitalize;
-      font-size: 14px;
-      color: #bbb3b3; }
-    #dashboard .add-review form input:-ms-input-placeholder {
-      text-transform: capitalize;
-      font-size: 14px;
-      color: #bbb3b3; }
-    #dashboard .add-review form input::-ms-input-placeholder {
-      text-transform: capitalize;
-      font-size: 14px;
-      color: #bbb3b3; }
-    #dashboard .add-review form input::placeholder {
-      text-transform: capitalize;
-      font-size: 14px;
-      color: #bbb3b3; }
-  #dashboard .add-review form textarea {
-    height: 160px;
-    resize: none; }
-  #dashboard .add-review form .brand-btn {
-    font-size: 16px;
-    font-weight: 700;
-    height: 50px;
-    line-height: 50px;
-    color: #fff;
-    background: #fb2056;
-    border: 1px solid #fb2056;
+  #dashboard .add-review form {
+    -webkit-box-shadow: 0 0 2px rgba(34, 34, 34, 0.363);
+            box-shadow: 0 0 2px rgba(34, 34, 34, 0.363);
     border-radius: 5px;
-    -webkit-transition: all linear 0.3s;
-    transition: all linear 0.3s;
-    padding: 0 50px; }
-    #dashboard .add-review form .brand-btn:hover {
+    padding: 20px 30px; }
+    #dashboard .add-review form .form-control:focus {
+      border-color: #e9457a;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    #dashboard .add-review form label {
+      font-size: 16px;
+      color: #252121;
+      font-family: "Lato", sans-serif;
+      font-weight: 500; }
+    #dashboard .add-review form input {
+      height: 40px;
+      border-color: #ddd; }
+      #dashboard .add-review form input::-webkit-input-placeholder {
+        text-transform: capitalize;
+        font-size: 14px;
+        color: #bbb3b3; }
+      #dashboard .add-review form input:-ms-input-placeholder {
+        text-transform: capitalize;
+        font-size: 14px;
+        color: #bbb3b3; }
+      #dashboard .add-review form input::-ms-input-placeholder {
+        text-transform: capitalize;
+        font-size: 14px;
+        color: #bbb3b3; }
+      #dashboard .add-review form input::placeholder {
+        text-transform: capitalize;
+        font-size: 14px;
+        color: #bbb3b3; }
+    #dashboard .add-review form textarea {
+      height: 160px;
+      resize: none; }
+    #dashboard .add-review form .brand-btn {
+      font-size: 16px;
+      font-weight: 700;
+      height: 50px;
+      line-height: 50px;
+      color: #fff;
       background: #fb2056;
-      border-color: transparent; }
-    #dashboard .add-review form .brand-btn:hover {
-      color: #fff !important; }
+      border: 1px solid #fb2056;
+      border-radius: 5px;
+      -webkit-transition: all linear 0.3s;
+      transition: all linear 0.3s;
+      padding: 0 50px; }
+      #dashboard .add-review form .brand-btn:hover {
+        background: #fb2056;
+        border-color: transparent; }
+      #dashboard .add-review form .brand-btn:hover {
+        color: #fff !important; }
 
 /*# sourceMappingURL=style.css.map */

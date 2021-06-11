@@ -5,10 +5,10 @@ import { Route } from "react-router";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AddProduct from "../components/AddProduct/AddProduct";
 import AddReview from "../components/AddReview/AddReview";
+import DashboardContent from "../components/DashboardContent/DashboardContent";
 import SideNav from "../components/SideNav/SideNav";
 import UserOrderList from "../components/UserOrderList/UserOrderList";
 import userImage from "../images/test2.png";
-import DemoDashBoard from "./DemoDashBoard";
 // import "../SCSS/style.css";
 const Dashboard = () => {
   const [shownav, setShowNav] = useState(false);
@@ -31,6 +31,9 @@ const Dashboard = () => {
           </div>
           <div className="dashboard-inner p-4">
             <Route exact path="/dashboard">
+              <DashboardContent />
+            </Route>
+            <Route exact path="/dashboard/all-orders">
               <UserOrderList />
             </Route>
             <Route path="/dashboard/add-review">

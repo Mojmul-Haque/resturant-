@@ -638,11 +638,17 @@ section {
 
   .add-review {
     form {
+      box-shadow: 0 0 2px rgba(34, 34, 34, 0.363);
+      border-radius: 5px;
+      padding: 20px 30px;
       .form-control {
         &:focus {
           border-color: $brandColor;
           box-shadow: none;
         }
+      }
+      label {
+        @include commonText(16px, #252121, $a, 500);
       }
       input {
         height: 40px;
@@ -650,7 +656,7 @@ section {
         &::placeholder {
           text-transform: capitalize;
           font-size: 14px;
-          color: rgb(187, 179, 179)
+          color: rgb(187, 179, 179);
         }
       }
       textarea {

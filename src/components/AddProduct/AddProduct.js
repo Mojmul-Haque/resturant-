@@ -19,41 +19,50 @@ const AddProduct = () => {
       <div className="col-lg-6">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div>
+            <label htmlFor="pd-name">Food Name</label>
             <input
               className="form-control my-2"
               {...register("name", { required: true })}
               placeholder="food name"
+              id="pd-name"
             />
             {errors.name && (
               <span className="text-danger">This field is required</span>
             )}
           </div>
           <div>
+            <label htmlFor="pd-price">Food Price</label>
             <input
               className="form-control my-2"
               {...register("price", { required: true })}
               placeholder="food Price"
+              id="pd-price"
             />
             {errors.price && (
               <span className="text-danger">This field is required</span>
             )}
           </div>
           <div>
+            <label htmlFor="pd-type">Food type</label>
             <input
               className="form-control my-2"
               {...register("foodType", { required: true })}
               placeholder="food type"
+              id="pd-type"
             />
             {errors.foodType && (
               <span className="text-danger">This field is required</span>
             )}
           </div>
           <div>
+            <label htmlFor="pd-image">Select Image</label>
             <input
               type="file"
               className="form-control my-2"
               {...register("foodImage", { required: true })}
+              id="pd-image"
             />
+
             {errors.foodImage && (
               <span className="text-danger">This field is required</span>
             )}
