@@ -3,7 +3,7 @@ import React from "react";
 const UserOrderList = () => {
   return (
     <div className="order-list">
-      <div className="order-top-text">
+      <div className="order-top-text dashboard-header">
         <h6 className="d-inline-block px-4 text-white py-2 mb-4">All Orders</h6>
       </div>
       <table className="table table-hover table-dark">

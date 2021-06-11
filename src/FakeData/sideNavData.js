@@ -8,12 +8,12 @@ import {
 
 export const sideNavData = [
   { icon: faHome, title: "Dashboard", path: "/dashboard" },
-  { icon: faThList, title: "All Orders", path: "/dashaboard/all-orders" },
-  { icon: faAddressCard, title: "Add Review", path: "/dashaboard/add-review" },
+  { icon: faThList, title: "All Orders", path: "/dashboard/all-orders" },
+  { icon: faAddressCard, title: "Add Review", path: "/dashboard/add-review" },
   {
     icon: faProductHunt,
     title: "Add Products",
-    path: "/dashaboard/add-product",
+    path: "/dashboard/add-food",
   },
-  { icon: faEdit, title: "Management", path: "/dashaboard/management" },
+  { icon: faEdit, title: "Management", path: "/dashboard/management" },
 ];

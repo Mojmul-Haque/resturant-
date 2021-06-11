@@ -11,6 +11,11 @@ const AddProduct = () => {
   const onSubmit = (data) => console.log(data);
   return (
     <div className="add-review">
+      <div className="dashboard-header">
+        <h6 className="d-inline-block px-4 text-white py-3 mb-4">
+          Add New Product
+        </h6>
+      </div>
       <div className="col-lg-6">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div>
@@ -19,7 +24,9 @@ const AddProduct = () => {
               {...register("name", { required: true })}
               placeholder="food name"
             />
-            {errors.name && <span>This field is required</span>}
+            {errors.name && (
+              <span className="text-danger">This field is required</span>
+            )}
           </div>
           <div>
             <input
@@ -27,7 +34,9 @@ const AddProduct = () => {
               {...register("price", { required: true })}
               placeholder="food Price"
             />
-            {errors.price && <span>This field is required</span>}
+            {errors.price && (
+              <span className="text-danger">This field is required</span>
+            )}
           </div>
           <div>
             <input
@@ -35,7 +44,9 @@ const AddProduct = () => {
               {...register("foodType", { required: true })}
               placeholder="food type"
             />
-            {errors.foodType && <span>This field is required</span>}
+            {errors.foodType && (
+              <span className="text-danger">This field is required</span>
+            )}
           </div>
           <div>
             <input
@@ -43,7 +54,9 @@ const AddProduct = () => {
               className="form-control my-2"
               {...register("foodImage", { required: true })}
             />
-            {errors.foodImage && <span>This field is required</span>}
+            {errors.foodImage && (
+              <span className="text-danger">This field is required</span>
+            )}
           </div>
           <div>
             <textarea
@@ -51,7 +64,9 @@ const AddProduct = () => {
               {...register("textBox", { required: true })}
               placeholder="food-description"
             />
-            {errors.textBox && <span>This field is required</span>}
+            {errors.textBox && (
+              <span className="text-danger">This field is required</span>
+            )}
           </div>
           <input
             type="submit"

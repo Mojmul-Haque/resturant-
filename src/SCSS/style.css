@@ -52,6 +52,11 @@ section {
   right: 0;
   top: 0; }
 
+.dashboard-header h6 {
+  -webkit-box-shadow: 0 2px 4px #333;
+          box-shadow: 0 2px 4px #333;
+  background: #fa5c7c; }
+
 .main-menu {
   height: 60px;
   line-height: 60px;
@@ -603,7 +608,7 @@ section {
         #dashboard .side-menu ul li a:hover {
           color: #e9457a; }
   #dashboard .dashboard-contents .content-head {
-    background: #e9457a;
+    background: #fb2056;
     padding: 10px 30px; }
     #dashboard .dashboard-contents .content-head .toggle-menu-btn svg {
       font-size: 26px;
@@ -617,14 +622,29 @@ section {
       #dashboard .dashboard-contents .content-head .user-account span {
         padding-left: 8px;
         color: #fff; }
-  #dashboard .order-list .order-top-text h6 {
-    -webkit-box-shadow: 0 2px 4px #333;
-            box-shadow: 0 2px 4px #333;
-    background: #fa5c7c; }
   #dashboard .add-review form .form-control:focus {
     border-color: #e9457a;
     -webkit-box-shadow: none;
             box-shadow: none; }
+  #dashboard .add-review form input {
+    height: 40px;
+    border-color: #ddd; }
+    #dashboard .add-review form input::-webkit-input-placeholder {
+      text-transform: capitalize;
+      font-size: 14px;
+      color: #bbb3b3; }
+    #dashboard .add-review form input:-ms-input-placeholder {
+      text-transform: capitalize;
+      font-size: 14px;
+      color: #bbb3b3; }
+    #dashboard .add-review form input::-ms-input-placeholder {
+      text-transform: capitalize;
+      font-size: 14px;
+      color: #bbb3b3; }
+    #dashboard .add-review form input::placeholder {
+      text-transform: capitalize;
+      font-size: 14px;
+      color: #bbb3b3; }
   #dashboard .add-review form textarea {
     height: 160px;
     resize: none; }
@@ -634,16 +654,14 @@ section {
     height: 50px;
     line-height: 50px;
     color: #fff;
-    background: #fa5c7c;
-    border: 1px solid #fa5c7c;
+    background: #fb2056;
+    border: 1px solid #fb2056;
     border-radius: 5px;
     -webkit-transition: all linear 0.3s;
     transition: all linear 0.3s;
-    padding: 0 50px;
-    -webkit-box-shadow: 0 4px 4px #e9457a;
-            box-shadow: 0 4px 4px #e9457a; }
+    padding: 0 50px; }
     #dashboard .add-review form .brand-btn:hover {
-      background: #fa5c7c;
+      background: #fb2056;
       border-color: transparent; }
     #dashboard .add-review form .brand-btn:hover {
       color: #fff !important; }

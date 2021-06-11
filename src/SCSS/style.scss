@@ -61,6 +61,13 @@ section {
   top: 0;
 }
 
+.dashboard-header {
+  h6 {
+    box-shadow: 0 2px 4px #333;
+    background: #fa5c7c;
+  }
+}
+
 // reusable css end here
 
 // header  menu start here;
@@ -605,7 +612,8 @@ section {
   }
   .dashboard-contents {
     .content-head {
-      background: $brandColor;
+      background: #fb2056;
+      // background: $brandColor;
       padding: 10px 30px;
       .toggle-menu-btn {
         svg {
@@ -627,14 +635,7 @@ section {
       }
     }
   }
-  .order-list {
-    .order-top-text {
-      h6 {
-        box-shadow: 0 2px 4px #333;
-        background: #fa5c7c;
-      }
-    }
-  }
+
   .add-review {
     form {
       .form-control {
@@ -643,15 +644,23 @@ section {
           box-shadow: none;
         }
       }
-
+      input {
+        height: 40px;
+        border-color: #ddd;
+        &::placeholder {
+          text-transform: capitalize;
+          font-size: 14px;
+          color: rgb(187, 179, 179)
+        }
+      }
       textarea {
         height: 160px;
         resize: none;
       }
       .brand-btn {
-        @include brandBtn(#fff, #fa5c7c, #fa5c7c, #fa5c7c);
+        @include brandBtn(#fff, $secondaryColor, $secondaryColor, $secondaryColor);
         padding: 0 50px;
-        box-shadow: 0 4px 4px $brandColor;
+        // box-shadow: 0 4px 4px $brandColor;
         &:hover {
           color: #fff !important;
         }
