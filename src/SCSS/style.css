@@ -57,6 +57,35 @@ section {
           box-shadow: 0 2px 4px #333;
   background: #fa5c7c; }
 
+.StripeCheckout {
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  line-height: 50px;
+  color: #e9457a !important;
+  background: #222 !important;
+  border: 1px solid #e9457a !important;
+  border-radius: 5px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  text-align: center;
+  margin: 22px 0 0;
+  -webkit-box-shadow: 0 3px 0px #e9457a !important;
+          box-shadow: 0 3px 0px #e9457a !important;
+  text-transform: uppercase;
+  color: #fff; }
+  .StripeCheckout:hover {
+    background: #e9457a !important;
+    border-color: transparent; }
+  .StripeCheckout span {
+    font-size: 16px !important;
+    background-image: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    color: #e9457a !important; }
+  .StripeCheckout:hover span {
+    color: #fff !important; }
+
 .main-menu {
   height: 60px;
   line-height: 60px;
@@ -220,34 +249,6 @@ section {
           background: #e9457a;
           border-color: transparent; }
         .main-menu ul .cart-menu .cart-item-show .cart-bottom a:hover {
-          color: #fff !important; }
-      .main-menu ul .cart-menu .cart-item-show .cart-bottom .StripeCheckout {
-        font-size: 16px;
-        font-weight: 700;
-        height: 50px;
-        line-height: 50px;
-        color: #e9457a !important;
-        background: #222 !important;
-        border: 1px solid #e9457a !important;
-        border-radius: 5px;
-        -webkit-transition: all linear 0.3s;
-        transition: all linear 0.3s;
-        width: 100%;
-        text-align: center;
-        margin: 22px 0 0;
-        -webkit-box-shadow: 0 3px 0px #e9457a !important;
-                box-shadow: 0 3px 0px #e9457a !important;
-        text-transform: uppercase; }
-        .main-menu ul .cart-menu .cart-item-show .cart-bottom .StripeCheckout:hover {
-          background: #e9457a !important;
-          border-color: transparent; }
-        .main-menu ul .cart-menu .cart-item-show .cart-bottom .StripeCheckout span {
-          font-size: 16px !important;
-          background-image: none !important;
-          -webkit-box-shadow: none !important;
-                  box-shadow: none !important;
-          color: #e9457a !important; }
-        .main-menu ul .cart-menu .cart-item-show .cart-bottom .StripeCheckout:hover span {
           color: #fff !important; }
   .main-menu ul .cart-menu:hover .cart-item-show {
     -webkit-transform: scaleY(1);

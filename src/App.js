@@ -30,10 +30,10 @@ function App() {
             <Dashboard />
           </Route>
 
-          <Route path="/checkout">
+          <PrivateRoute path="/checkout">
             <Nav />
             <Checkout />
-          </Route>
+          </PrivateRoute>
         </Switch>
       </Router>
     </UserContext.Provider>

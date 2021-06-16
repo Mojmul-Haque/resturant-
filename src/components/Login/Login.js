@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
 import { useDispatch } from "react-redux";
 import { firebaseItial, googleLogin } from "../../firebase/firebase";
-// import { userLogin } from "../../Redux/Action/userAuthAction";
 import { useHistory, useLocation } from "react-router-dom";
 import { UserContext } from "../../App";
+import { loginUser } from "../../Redux/Action/authAciton";
 
 const Login = () => {
   const init = firebaseItial;
@@ -18,14 +18,7 @@ const Login = () => {
         image: res.photoURL,
         signIn: true,
       };
-      // dispatch(userLogin(newUserInfo));
-
-      const a = { ...loggedInUser };
-      a.name = res.displayName;
-      a.email = res.email;
-      a.image = res.photoURL;
-      a.signI = true;
-      setlogggedInUser(a);
+      dispatch(loginUser(newUserInfo));
       history.replace(from);
     });
   };

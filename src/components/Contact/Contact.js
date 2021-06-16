@@ -29,7 +29,7 @@ const Contact = () => {
     {
       name: "date",
       placeholder: "date",
-      icon: faUserAlt,
+      icon: null,
       errorMessage: "Your Date is required",
       type: "date",
     },
@@ -76,7 +76,10 @@ const Contact = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="row">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="col-lg-4 col-md-4 col-12 position-relative">
+                  <div
+                    key={index}
+                    className="col-lg-4 col-md-4 col-12 position-relative"
+                  >
                     <input
                       type={info.type}
                       className="form-control"

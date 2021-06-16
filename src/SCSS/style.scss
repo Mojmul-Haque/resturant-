@@ -68,6 +68,25 @@ section {
   }
 }
 
+.StripeCheckout {
+  @include brandBtn($brandColor !important, #222 !important, $brandColor !important, $brandColor !important);
+  // width: 100%;
+  text-align: center;
+  margin: 22px 0 0;
+  box-shadow: 0 3px 0px $brandColor !important;
+  text-transform: uppercase;
+  color: #fff;
+  span {
+    font-size: 16px !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    color: $brandColor !important;
+  }
+  &:hover span {
+    color: #fff !important;
+  }
+}
+
 // reusable css end here
 
 // header  menu start here;
@@ -205,24 +224,6 @@ section {
             box-shadow: 0 3px 0px $brandColor;
             text-transform: uppercase;
             &:hover {
-              color: #fff !important;
-            }
-          }
-          .StripeCheckout {
-            @include brandBtn($brandColor !important, #222 !important, $brandColor !important, $brandColor !important);
-            width: 100%;
-            text-align: center;
-            margin: 22px 0 0;
-            box-shadow: 0 3px 0px $brandColor !important;
-            text-transform: uppercase;
-
-            span {
-              font-size: 16px !important;
-              background-image: none !important;
-              box-shadow: none !important;
-              color: $brandColor !important;
-            }
-            &:hover span {
               color: #fff !important;
             }
           }
