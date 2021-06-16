@@ -676,4 +676,35 @@ section {
       #dashboard .add-review form .brand-btn:hover {
         color: #fff !important; }
 
+#checkoutForm {
+  position: relative;
+  top: 120px; }
+  #checkoutForm .cart-heading {
+    background: #fb2056; }
+  #checkoutForm .main-cart {
+    margin-top: 12px; }
+    #checkoutForm .main-cart .cart-product figure img {
+      width: 80px;
+      height: 80px;
+      border: 1px solid #ddd; }
+    #checkoutForm .main-cart .cart-product figure figcaption {
+      margin-left: 10px; }
+      #checkoutForm .main-cart .cart-product figure figcaption h6 {
+        font-family: "Lato", sans-serif;
+        color: #757575; }
+      #checkoutForm .main-cart .cart-product figure figcaption span {
+        font-size: 14px;
+        color: #fb2056;
+        cursor: pointer; }
+    #checkoutForm .main-cart .cart-product .cart-quantity input {
+      width: 65px;
+      padding: 4px 10px;
+      border: 2px solid #e9457a; }
+      #checkoutForm .main-cart .cart-product .cart-quantity input:focus {
+        border-color: #e9457a; }
+    #checkoutForm .main-cart .cart-product .cart-subtotal h5 {
+      color: #e9457a; }
+  #checkoutForm .cart-price-calculate {
+    border-top: 2px solid #e9457a; }
+
 /*# sourceMappingURL=style.css.map */

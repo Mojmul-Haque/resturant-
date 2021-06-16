@@ -678,3 +678,60 @@ section {
 // =============================================================
 //  dashboard page end here
 // ==============================================================
+
+// =============================================================
+//  checkout part start
+// ==============================================================
+#checkoutForm {
+  position: relative;
+  top: 120px;
+  .cart-heading {
+    background: $secondaryColor;
+  }
+  .main-cart {
+    margin-top: 12px;
+    .cart-product {
+      figure {
+        img {
+          width: 80px;
+          height: 80px;
+          border: 1px solid #ddd;
+        }
+        figcaption {
+          margin-left: 10px;
+          h6 {
+            font-family: $a;
+            color: #757575;
+          }
+          span {
+            font-size: 14px;
+            color: $secondaryColor;
+            cursor: pointer;
+          }
+        }
+      }
+      .cart-quantity {
+        input {
+          width: 65px;
+          padding: 4px 10px;
+          border: 2px solid $brandColor;
+          &:focus {
+            border-color: $brandColor;
+          }
+        }
+      }
+      .cart-subtotal {
+        h5 {
+          color: $brandColor;
+        }
+      }
+    }
+  }
+  .cart-price-calculate {
+    border-top: 2px solid $brandColor;
+  }
+}
+
+// =============================================================
+//  checkout part end here
+// ==============================================================

@@ -53,7 +53,7 @@ const Nav = () => {
               </ul>
             </li>
             <li className="nav-item cart-menu position-relative">
-              <Link className="nav-link" aria-current="page" to="/">
+              <Link className="nav-link" aria-current="page" to="/checkout">
                 <FontAwesomeIcon icon={faShoppingCart} />
                 <span> Cart</span>
               </Link>

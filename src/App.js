@@ -5,6 +5,8 @@ import Dashboard from "./pages/Dashboard";
 import Login from "./components/Login/Login";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import { createContext, useState } from "react";
+import Checkout from "./components/Checkout/Checkout";
+import Nav from "./sharePage/Nav/Nav";
 // import { Provider } from "react-redux";
 export const UserContext = createContext();
 function App() {
@@ -24,9 +26,14 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <PrivateRoute path="/dashboard">
+          <Route path="/dashboard">
             <Dashboard />
-          </PrivateRoute>
+          </Route>
+
+          <Route path="/checkout">
+            <Nav />
+            <Checkout />
+          </Route>
         </Switch>
       </Router>
     </UserContext.Provider>
